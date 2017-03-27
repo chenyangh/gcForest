@@ -422,6 +422,7 @@ class gcForest(object):
 
         return casc_accuracy
 
+
     def _create_feat_arr(self, X, prf_crf_pred):
         """ Concatenate the original feature vector with the predicition probabilities
         of a cascade layer.
@@ -443,3 +444,5 @@ class gcForest(object):
         feat_arr = np.concatenate([add_feat, X], axis=1)
 
         return feat_arr
+
+print(" ")
